@@ -7,20 +7,31 @@
 <body>
 <h1>Bảng cửu chương</h1>
 <script>
-    let sout, i, j;
-    sout = "<table border='1' width='300' cellspacing='0' cellpadding='15'>";
-    debugger;
-    for (i = 1; i <= 10; i++) {
-        sout = sout + "<tr>";
-        for (j = 1; j <= 10; j++) {
-            sout = sout + "<td>" + j + "*" + i + "=" + i * j + "</td>";
-        }
-        sout = sout + "</tr>";
-        // j = 1;
-    }
-    sout = sout + "</table>";
-    document.write(sout);
+    // let sout, i, j;
+    // sout = "<table border='1' width='300' cellspacing='0' cellpadding='15'>";
+    // debugger;
+    // for (i = 1; i <= 10; i++) {
+    //     sout = sout + "<tr>";
+    //     for (j = 1; j <= 10; j++) {
+    //         sout = sout + "<td>" + j + "*" + i + "=" + i * j + "</td>";
+    //     }
+    //     sout = sout + "</tr>";
+    //     // j = 1;
+    // }
+    // sout = sout + "</table>";
+    // document.write(sout);
 
+    let res = "<table border='1px' style='border-collapse: collapse'>"
+    for (let i = 1; i <= 9; i++) {
+        res += "<tr>"
+            for (let j=2; j<=9; j++){
+            res += "<td>" + j + "*" + i + "=" + (i * j) + "</td>"
+
+        }
+            res +="</tr>";
+    }
+    res += "</table>"
+    document.write(res);
 </script>
 </body>
 </html>
